@@ -13,11 +13,11 @@ const TeamsAdminPage = () => {
     }
 
     const handleBack = () => {
-    navigate(-1)
+    navigate('/adminPage')
     }
 
     const handleAddTeam = () => {
-        alert("Agregar team")
+        navigate("/teams/create")
     }
 
   return (
