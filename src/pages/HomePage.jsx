@@ -1,15 +1,23 @@
 import React from 'react';
 import LogoGesliga from '../assets/imgs/1.png'
 import '../styles/homePage.css'
+import { Navigate, useNavigate } from 'react-router-dom'
+
 
 const HomePage = () => {
+  const navigate = useNavigate()
+  
+  const handleSubmit = () => {
+    navigate('/adminPage')
+  }
+
   return (
     <section className='containerHomePage'>
       <div className="hero">
         <img src={LogoGesliga} alt="Logo Gesliga" />
       </div>
       <div className="container-form">
-        <form>
+        <form onSubmit={handleSubmit}>
           <div className="mb-3">
             <h3>Ingresar al sistema</h3>
           </div>
@@ -22,9 +30,6 @@ const HomePage = () => {
             <input type="text" className="form-control" id="InputPassword" aria-describedby="passwordHelp" value={"axel123"}/>
           </div>
           <button type="submit" className="btn btn-primary">Entrar</button>
-          <div className="mb-3">
-            <p>¿No tenés cuenta? <a href="/signUp">Crear cuenta</a></p>
-          </div>
         </form>
       </div>
     </section>

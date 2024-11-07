@@ -1,6 +1,7 @@
 import './styles/App.css'
 import HomePage from './pages/HomePage'
 import SignUpPage from './pages/SignUpPage'
+import AdminPage from './pages/AdminPage'
 
 import {
   Routes,
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route path='/' element={<HomePage/>}/>
           <Route path='/signUp' element={<SignUpPage/>}/>
+          <Route path='/adminPage' element={<AdminPage/>}/>
         </Routes>
       </BrowserRouter>
     </>
