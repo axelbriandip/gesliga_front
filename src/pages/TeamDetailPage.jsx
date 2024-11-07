@@ -10,6 +10,7 @@ const TeamDetailPage = () => {
 
     const handleLogout = () => navigate("/")
     const handleBack = () => navigate('/teams')
+    const handleAddPlayer = () => navigate(`/team/${id}/createPlayer`)
 
     return (
     <section className='adminPage'>
@@ -18,7 +19,7 @@ const TeamDetailPage = () => {
         <button onClick={handleBack}>Volver</button>
         <h1>Team Detail Page - Club id {id}</h1>
         <p>Delegado: Daniel Rodríguez</p>
-        <button>Agregar jugador</button>
+        <button onClick={handleAddPlayer}>Agregar jugador</button>
         </div>
         <div className="list-players">
             <table class="table">
