@@ -1,0 +1,21 @@
+@import url('./reset.css');
+
+:root {
+  /* Colores principales */
+  --primary-color: #033860;
+  --secondary-color: #ffc33d;
+  --white: #eee;
+  --black: #333;
+
+  /* Tipografía */
+  --font-size-big: 1.6rem;
+  --font-size-base: 1rem;
+  --font-size-small: .6rem;
+}
+
+/* Establece una fuente base para todo el proyecto */
+body {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background-color: var(--white);
+  color: var(--black);
+}
