@@ -1,24 +1,15 @@
 import React from 'react';
-import LogoGesliga from '../assets/imgs/1.png'
 import '../styles/homePage.css'
-import { Navigate, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import RowTeam from '../components/RowTeam';
 
 
 const TeamsAdminPage = () => {
     const navigate = useNavigate()
 
-    const handleLogout = () => {
-    navigate("/")
-    }
-
-    const handleBack = () => {
-    navigate('/adminPage')
-    }
-
-    const handleAddTeam = () => {
-        navigate("/teams/create")
-    }
+    const handleLogout = () => navigate("/")
+    const handleBack = () => navigate('/adminPage')
+    const handleAddTeam = () => navigate("/teams/create")
 
   return (
     <section className='teamsAdminPage'>
