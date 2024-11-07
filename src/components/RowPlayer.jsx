@@ -1,15 +1,21 @@
 import React from 'react';
 import '../styles/components/cardOptionAdmin.css'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
-const RowPlayer = ({id, name, dni, birth}) => {
+const RowPlayer = ({id, name, dni, birth, teamId}) => {
+  const navigate = useNavigate()
+
+  const handlePass = () => {
+    navigate(`/generateRequest/team/${teamId}/player/${id}`)
+  }
+
   return (
     <tr>
         <th scope="row">{id}</th>
         <td>{name}</td>
         <td>{dni}</td>
         <td>{birth}</td>
-        <td>Pase</td>
+        <td><button onClick={handlePass}>Pase</button></td>
     </tr>
   );
 }

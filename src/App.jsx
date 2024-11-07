@@ -12,6 +12,7 @@ import TeamsAdminPage from './pages/teamsAdminPage';
 import AddTeamFormPage from './pages/AddTeamFormPage';
 import TeamDetailPage from './pages/TeamDetailPage';
 import CreatePlayerFormPage from './pages/CreatePlayerFormPage';
+import GenerateRequestFormPage from './pages/GenerateRequestFormPage';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path='/teams/create' element={<AddTeamFormPage/>}/>
           <Route path='/teams/:id' element={<TeamDetailPage/>}/>
           <Route path='/team/:id/createPlayer' element={<CreatePlayerFormPage/>}/>
+          <Route path='/generateRequest/team/:teamId/player/:playerId' element={<GenerateRequestFormPage/>}/>
         </Routes>
       </BrowserRouter>
     </>
