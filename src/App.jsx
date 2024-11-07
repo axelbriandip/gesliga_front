@@ -10,6 +10,7 @@ import SignUpPage from './pages/SignUpPage'
 import AdminPage from './pages/AdminPage'
 import TeamsAdminPage from './pages/teamsAdminPage';
 import AddTeamFormPage from './pages/AddTeamFormPage';
+import TeamDetailPage from './pages/TeamDetailPage';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path='/adminPage' element={<AdminPage/>}/>
           <Route path='/teams' element={<TeamsAdminPage/>}/>
           <Route path='/teams/create' element={<AddTeamFormPage/>}/>
+          <Route path='/teams/:id' element={<TeamDetailPage/>}/>
         </Routes>
       </BrowserRouter>
     </>
