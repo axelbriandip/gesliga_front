@@ -14,14 +14,14 @@ const AdminPage = () => {
   return (
     <section className='adminPage'>
       <div className="header">
-        <h1>Panel de admin</h1>
         <button onClick={handleLogout}>Cerrar sesión</button>
+        <h1>Panel de admin</h1>
       </div>
       <div className="container-options">
-        <CardOptionAdmin title="Equipos" text="texto de equipos"/>
-        <CardOptionAdmin title="Usuarios" text="texto de usuarios"/>
-        <CardOptionAdmin title="Solicitudes" text="texto de solicitudes"/>
-        <CardOptionAdmin title="Mi perfil" text="texto de mi perfil"/>
+        <CardOptionAdmin title="Equipos" text="texto de equipos" to="teams"/>
+        <CardOptionAdmin title="Usuarios" text="texto de usuarios" to="#"/>
+        <CardOptionAdmin title="Solicitudes" text="texto de solicitudes" to="#"/>
+        <CardOptionAdmin title="Mi perfil" text="texto de mi perfil" to="#"/>
       </div>
     </section>
   );
