@@ -1,0 +1,28 @@
+@import url('./index.css');
+
+.containerHomePage {
+    display: flex;
+    height: 100vh;
+    background-color: var(--secondary-color);
+}
+
+.containerHomePage .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+    width: 50vw;
+}
+
+.containerHomePage .container-form {
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerHomePage form {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: .5rem;
+}

@@ -1,10 +1,10 @@
 import './styles/App.css'
-import LogoGesliga from '../src/assets/imgs/1.png'
+import HomePage from './pages/HomePage'
 
 function App() {
   return (
     <>
-      <img src={LogoGesliga} alt="Logo Gesliga" />
+      <HomePage/>
     </>
   )
 }
