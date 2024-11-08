@@ -21,6 +21,7 @@ import DeleteUserPage from './pages/users/DeleteUserPage';
 import UserDetailPage from './pages/users/UserDetailPage';
 import RequestsAdminPage from './pages/requests/RequestsAdminPage';
 import RequestDetailPage from './pages/requests/RequestDetailPage';
+import EditRequestFormPage from './pages/requests/EditRequestFormPage';
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
           <Route path='/users/:userId/detail' element={<UserDetailPage/>}/>
           <Route path='/requests' element={<RequestsAdminPage/>}/>
           <Route path='/requests/:requestId/detail' element={<RequestDetailPage/>}/>
+          <Route path='/requests/:requestId/edit' element={<EditRequestFormPage/>}/>
         </Routes>
       </BrowserRouter>
     </>
