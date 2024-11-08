@@ -18,6 +18,7 @@ import UsersAdminPage from './pages/users/UsersAdminPage';
 import CreateUserFormPage from './pages/users/CreateUserFormPage';
 import EditUserFormPage from './pages/users/EditUserFormPage';
 import DeleteUserPage from './pages/users/DeleteUserPage';
+import UserDetailPage from './pages/users/UserDetailPage';
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
           <Route path='/users/create' element={<CreateUserFormPage/>}/>
           <Route path='/users/:userId/edit' element={<EditUserFormPage/>}/>
           <Route path='/users/:userId/delete' element={<DeleteUserPage/>}/>
+          <Route path='/users/:userId/detail' element={<UserDetailPage/>}/>
         </Routes>
       </BrowserRouter>
     </>

@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 const RowUser = ({id, name, email, password, teamId}) => {
   const navigate = useNavigate()
 
-  const handleViewUser = () => navigate(`/users/${id}/view`)
+  const handleViewUser = () => navigate(`/users/${id}/detail`)
   const handleEditUser = () => navigate(`/users/${id}/edit`)
   const handleDeleteUser = () => navigate(`/users/${id}/delete`)
 
