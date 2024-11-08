@@ -5,8 +5,8 @@ const RowRequest = ({id, type, player, state}) => {
   const navigate = useNavigate()
 
   const handleViewRequest = () => navigate(`/requests/${id}/detail`)
-  const handleEditRequest = () => navigate(`/requests/${id}/edit`)
-  const handleDeleteRequest = () => navigate(`/requests/${id}/delete`)
+  const handleAcceptRequest = () => confirm("¿Seguro que deseas aceptar?")
+  const handleRefusedRequest = () => confirm("¿Seguro que deseas rechazar?")
 
   return (
     <tr>
@@ -16,8 +16,8 @@ const RowRequest = ({id, type, player, state}) => {
         <td>{state}</td>
         <td>
             <button onClick={handleViewRequest}>Ver</button>
-            <button onClick={handleEditRequest}>Aceptar</button>
-            <button onClick={handleDeleteRequest}>Rechazar</button>
+            <button onClick={handleAcceptRequest}>Aceptar</button>
+            <button onClick={handleRefusedRequest}>Rechazar</button>
         </td>
     </tr>
   );
