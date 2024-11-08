@@ -20,6 +20,7 @@ import EditUserFormPage from './pages/users/EditUserFormPage';
 import DeleteUserPage from './pages/users/DeleteUserPage';
 import UserDetailPage from './pages/users/UserDetailPage';
 import RequestsAdminPage from './pages/requests/RequestsAdminPage';
+import RequestDetailPage from './pages/requests/RequestDetailPage';
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
           <Route path='/users/:userId/delete' element={<DeleteUserPage/>}/>
           <Route path='/users/:userId/detail' element={<UserDetailPage/>}/>
           <Route path='/requests' element={<RequestsAdminPage/>}/>
+          <Route path='/requests/:requestId/detail' element={<RequestDetailPage/>}/>
         </Routes>
       </BrowserRouter>
     </>

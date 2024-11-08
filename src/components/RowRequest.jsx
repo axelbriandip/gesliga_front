@@ -1,13 +1,12 @@
 import React from 'react';
-import '../styles/components/cardOptionAdmin.css'
 import { useNavigate } from 'react-router-dom';
 
 const RowRequest = ({id, type, player, state}) => {
   const navigate = useNavigate()
 
-  const handleViewUser = () => navigate(`/users/${id}/detail`)
-  const handleEditUser = () => navigate(`/users/${id}/edit`)
-  const handleDeleteUser = () => navigate(`/users/${id}/delete`)
+  const handleViewRequest = () => navigate(`/requests/${id}/detail`)
+  const handleEditRequest = () => navigate(`/requests/${id}/edit`)
+  const handleDeleteRequest = () => navigate(`/requests/${id}/delete`)
 
   return (
     <tr>
@@ -16,9 +15,9 @@ const RowRequest = ({id, type, player, state}) => {
         <td>{player}</td>
         <td>{state}</td>
         <td>
-            <button onClick={handleViewUser}>Ver</button>
-            <button onClick={handleEditUser}>Aceptar</button>
-            <button onClick={handleDeleteUser}>Rechazar</button>
+            <button onClick={handleViewRequest}>Ver</button>
+            <button onClick={handleEditRequest}>Aceptar</button>
+            <button onClick={handleDeleteRequest}>Rechazar</button>
         </td>
     </tr>
   );
