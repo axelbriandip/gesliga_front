@@ -16,6 +16,7 @@ import GenerateRequestFormPage from './pages/GenerateRequestFormPage';
 import EditTeamPage from './pages/EditTeamPage';
 import UsersAdminPage from './pages/users/UsersAdminPage';
 import CreateUserFormPage from './pages/users/CreateUserFormPage';
+import EditUserFormPage from './pages/users/EditUserFormPage';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
           <Route path='/team/:teamId/edit' element={<EditTeamPage/>}/>
           <Route path='/users' element={<UsersAdminPage/>}/>
           <Route path='/users/create' element={<CreateUserFormPage/>}/>
+          <Route path='/users/:userId/edit' element={<EditUserFormPage/>}/>
         </Routes>
       </BrowserRouter>
     </>
