@@ -22,7 +22,7 @@ const AdminPage = () => {
       <div className="container-options">
         <CardOptionAdmin title="Equipos" text="texto de equipos" to="/teams"/>
         <CardOptionAdmin title="Usuarios" text="texto de usuarios" to="/users"/>
-        <CardOptionAdmin title="Solicitudes" text="texto de solicitudes" to="#"/>
+        <CardOptionAdmin title="Solicitudes" text="texto de solicitudes" to="/requests"/>
         <CardOptionAdmin title="Mi perfil" text="texto de mi perfil" to={urlMyProfile}/>
       </div>
     </section>
