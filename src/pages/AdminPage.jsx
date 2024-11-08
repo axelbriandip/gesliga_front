@@ -6,6 +6,8 @@ import { useNavigate } from 'react-router-dom';
 
 const AdminPage = () => {
   const navigate = useNavigate()
+  const sessionUserId = 18
+  const urlMyProfile = `/users/${sessionUserId}/detail`
   
   const handleLogout = () => {
     navigate("/")
@@ -18,10 +20,10 @@ const AdminPage = () => {
         <h1>Panel de admin</h1>
       </div>
       <div className="container-options">
-        <CardOptionAdmin title="Equipos" text="texto de equipos" to="teams"/>
-        <CardOptionAdmin title="Usuarios" text="texto de usuarios" to="users"/>
+        <CardOptionAdmin title="Equipos" text="texto de equipos" to="/teams"/>
+        <CardOptionAdmin title="Usuarios" text="texto de usuarios" to="/users"/>
         <CardOptionAdmin title="Solicitudes" text="texto de solicitudes" to="#"/>
-        <CardOptionAdmin title="Mi perfil" text="texto de mi perfil" to="#"/>
+        <CardOptionAdmin title="Mi perfil" text="texto de mi perfil" to={urlMyProfile}/>
       </div>
     </section>
   );
