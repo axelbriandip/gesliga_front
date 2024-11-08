@@ -7,7 +7,7 @@ const UsersAdminPage = () => {
 
     const handleLogout = () => navigate("/")
     const handleBack = () => navigate('/adminPage')
-    const handleAddTeam = () => navigate("/teams/create")
+    const handleAddUser = () => navigate("/users/create")
 
   return (
     <section className='teamsAdminPage'>
@@ -15,7 +15,7 @@ const UsersAdminPage = () => {
         <button onClick={handleLogout}>Cerrar sesión</button>
         <button onClick={handleBack}>Volver</button>
         <h1>Usuarios</h1>
-        <button onClick={handleAddTeam}>Agregar usuario</button>
+        <button onClick={handleAddUser}>Agregar usuario</button>
       </div>
       <div className="container-teams">
         <table class="table">
